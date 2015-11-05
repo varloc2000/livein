@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="body-backdrop"></div>
+    <div class="container-fluid l-container">
+        {% include 'AppBundle:Layout:_havbar.html.twig' %}
+        <div class="raw">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
